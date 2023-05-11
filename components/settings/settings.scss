@@ -1,0 +1,153 @@
+.settings {
+    width: 100%;
+    background-color: $color-dark-blue;
+
+    &__container {
+        color: $color-white;
+    }
+
+    &__title {
+        @include text(32px, 700, 130%);
+        padding: calc(5.29 * $index) 0 calc(2.64 * $index);
+        span{
+            display: block;
+        }
+    }
+
+    &__card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__card {
+        
+    }
+
+    &__text-card {
+        width: 800px;
+        background-color: $color-very-light-blue;
+        color: $color-black;
+        @include text(14px, 300, 130%);
+        border-radius: 20px;
+        margin: 20px 0 116px 0;
+    }
+
+    &__text {
+        padding: 40px;
+    }
+
+    &__ticker {
+    }
+}
+
+.card {
+    width: 49%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: $color-very-light-blue;
+    color: $color-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 64px;
+        height: 64px;
+        display: block;
+    }
+
+    &__text-container {
+        max-width: 350px;
+        padding-left: 50px;
+    }
+
+    &__title {
+        @include text(18px, 500, 130%);
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        @include text(14px, 300, 130%);
+    }
+
+    &_first-card{
+        margin: 0 10px 10px 0;
+    }
+
+    &_second-card{
+        margin: 0 0 10px 10px;
+    }
+
+    &_third-card{
+        margin: 10px 10px 0 0;
+    }
+
+    &_fourth-card{
+        margin: 10px 0 0 10px;
+    }
+}
+
+.ticker {
+    width: 100%;
+    height: 150px;
+    background-color: $color-light-blue;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+
+    div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 200%;
+    height: 150px;
+    transform: translate(100%, 0);
+
+    p {
+        @include text(46px, 300, 130%);
+        color: transparent;
+        font-family: sans-serif;
+        -webkit-text-stroke: 1px $color-white;
+    }
+    img{
+      height: 60px;
+    }
+  }
+
+  
+
+  .ticker-wrapper__first-half, .ticker-wrapper__second-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: ticker $duration infinite linear forwards;
+  }
+
+  .ticker-wrapper__second-half {
+    animation: $duration ticker 10s infinite linear forwards;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate(100%, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+
+

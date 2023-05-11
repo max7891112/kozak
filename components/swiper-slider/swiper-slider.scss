@@ -1,0 +1,145 @@
+.swiper-slider {
+
+    &__container {
+        padding-top: 120px;
+    }
+
+    &__visable {
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+    }
+
+    &__slogan {
+        @include text($font-large, $font-weight-bold, 130%);
+        padding-bottom: 60px;
+    }
+
+    &__move-part {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__left-p {
+        max-width: 602px;
+    }
+
+    &__subslogan {
+        @include text(20px, $font-weight-medium, 130%);
+        padding-bottom: 15px;
+    }
+
+    &__box-text {
+    }
+
+    &__bold {
+        @include text($font-more-standard, $font-weight-medium, 130%);
+        padding-bottom: 10px;
+    }
+
+    &__main-text {
+        @include text($font-standard, $font-weight-light, 130%);
+        padding-bottom: 20px;
+        
+        & ul li {
+          list-style: disc;  
+        }
+
+        & ul {
+            padding-left: 19px;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__chekbox-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding-bottom: 5px;
+
+        & span {
+            @include text($font-medium, $font-weight-medium, 130%); 
+        }
+        
+        & p {
+            padding: 0;
+        }
+    }
+
+    &__right-p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__indicators {
+        display: flex;
+        align-self: flex-end;
+        padding-bottom: 42px;
+    }
+
+    &__points-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-right: 20px;
+    }
+
+    &__points-item {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__arrows-left {
+    }
+
+    &__arrows-right {
+    }
+
+    &__right-img {
+    }
+
+    &__btn-p {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    &__btn-dark {
+        width: 289px;
+        height: 48px;
+        color: $color-white;
+        background: $color-dark-blue;
+        border-radius: 30px;
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__light-dark {
+        width: 289px;
+        height: 48px;
+        color: #313B43;
+        background: $color-white;
+        border: 1px solid #313B43;
+        border-radius: 30px;
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

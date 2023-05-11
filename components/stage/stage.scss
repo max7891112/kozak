@@ -1,0 +1,171 @@
+.stage {
+
+    &__container {
+    }
+
+    &__slogan {
+        @include text($font-large, $font-weight-bold, 130%);
+        padding-top: 120px;
+    }
+
+    &__items {
+        padding: 60px 0 120px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    &__item {
+        display: flex;
+        flex-grow: 0;
+    }
+
+    &__item-part-first {
+
+    }
+
+    &__number {
+    }
+
+    &__part-first-text {
+        padding-top: 20px;
+        @include text($font-standard, $font-weight-regular, 130%);
+        min-width: 281px;
+
+        & span {
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+    &__img-circle {
+        padding-left: 40px;
+        align-self: start;
+    }
+
+    &__item-part-third {
+        padding-left: 20px;
+    }
+
+    &__item-third-slogan {
+        @include text($font-medium, $font-weight-medium, 130%);
+        padding-bottom: 20px;
+    }
+
+    &__box-text {
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__box-text-item {
+    }
+
+    &__results {
+        padding-top: 20px;
+    }
+
+    &__results-slogan {
+        @include text($font-more-standard, $font-weight-medium, 130%);
+        padding-bottom: 10px;
+    }
+
+    &__check-area {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__check-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__check-img {
+        padding-right: 20px;
+    }
+
+    &__check-text {
+    }
+
+    //greeting
+
+    &__greeting {
+    }
+
+    &__greeting-area {
+        position: relative;
+        min-height: 493px;
+        color: $color-white;
+    }
+
+    &__notebook-img {
+        position: absolute;
+        max-width: 1200px;
+        z-index: -20;
+    }
+
+    &__greeting-sloagn {
+        @include text($font-medium, $font-weight-medium, 130%);
+        padding: 70px 0 20px 668px;
+    }
+
+    &__greeting-box-text {
+        padding-left: 668px;
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &__parts {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 120px 0;
+    }
+
+    &__greeting-left-p {
+        // max-width: 760px;
+    }
+
+    &__greeting-l-p-slogan {
+        @include text($font-medium, $font-weight-medium, 130%);
+        width: 100%;
+        min-width: 760px;
+    }
+
+    &__greeting-l-p-text {
+        padding-top: 33px;
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__greeting-right-p {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    &__greeting-up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &__greeting-up-item {
+        width: 50%;
+    }
+
+    &__greeting-up-slogan {
+        @include text($font-more-standard, $font-weight-medium, 130%);
+    }
+
+    &__greeting-up-text {
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__greeting-down {
+    }
+}
+

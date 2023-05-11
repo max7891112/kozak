@@ -1,0 +1,45 @@
+html{
+    font-size: 14px;
+}
+
+* {
+    font-family: 'Unbounded', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    cursor: pointer;
+}
+
+$index: calc(1vh + 1vw);
+$duration: 20s;
+// 22.65px
+
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-background: #F5F5F5;
+$color-dark-blue: #313B43;
+$color-very-light-blue: #EAF3F9;
+$color-light-blue: #88A0BD;
+
+$font-standard: 14px;
+$font-more-standard: 18px; 
+$font-medium: 22px;
+$font-large: 32px;
+$font-tremendous: 45px;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+@mixin text($s, $w, $h) {
+    font-size: $s;
+    font-weight: $w;
+    line-height: $h;
+    // @include text(Montserrat, 24px, 79px,red)
+}

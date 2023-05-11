@@ -1,0 +1,113 @@
+.main-page {
+
+    &__container {
+    }
+
+    &__menu-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        max-width: 610px;
+        margin: 0 auto;
+        padding: 30px 0 20px 0;
+
+        @include text($font-standard, $font-weight-regular, 17px);
+    }
+
+    &__slogan-box {
+        padding-top: 40px;
+    }
+
+    &__slogan {
+        @include text($font-tremendous, $font-weight-semibold, 56px);
+        text-align: right;
+    }
+
+    &__middle {
+        display: flex;
+    }
+
+    &__left-part {
+    }
+
+    &__img {
+    }
+
+    &__right-part {
+        padding: 40px 0 0 78px;
+    }
+
+    &__right-part-text {
+        @include text($font-medium, $font-weight-medium, 130%);
+        padding-bottom: 20px;
+    }
+
+    &__right-part-checks {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 92px;
+    }
+
+    &__right-part-item {
+        display: flex;
+        align-items: center;
+        @include text($font-standard, $font-weight-light, 17px);
+    }
+
+    &__right-part-img {
+        padding-right: 22px;
+    }
+
+    &__dark-btn {
+        width: 289px;
+        height: 48px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-dark-blue;
+        color: $color-white;
+        @include text($font-standard, $font-weight-light, 17px);
+        margin-bottom: 10px;
+    }
+
+    &__light-btn {
+        width: 289px;
+        height: 48px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-white;
+        color: $color-dark-blue;
+        border: 1px solid $color-dark-blue;
+        @include text($font-standard, $font-weight-light, 17px);
+    }
+
+    &__bottom-part {
+        background-color: $color-very-light-blue;
+        border-radius: 20px;
+        margin: 40px 0 120px 0;
+    }
+
+    &__bottom-part-items {
+        display: flex;
+        padding: 66px 40px;
+    }
+
+    &__bottom-part-item {
+        display: flex;
+        align-items: center;
+        padding: 8px 20px 8px 8px;
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__bottom-part-img {
+    }
+
+    &__bottom-part-text {
+        padding-left: 20px;
+    }
+}

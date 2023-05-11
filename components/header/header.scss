@@ -1,0 +1,66 @@
+.header {
+
+    width: 100%;
+    // background-color: $color-dark-blue;
+    background-color: $color-dark-blue;
+    color: $color-white;
+    padding: 43px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    &_logo-up-text {
+        @include text($font-more-standard, $font-weight-bold, $font-medium);
+        padding-bottom: 5px;
+    }
+
+    &_logo-down-text {
+        @include text($font-standard, $font-weight-regular, 17px);
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__label {
+    }
+
+    &__logo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 37px;
+    }
+
+    &__slogan {
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone-img {
+        padding-right: 4px;
+    }
+
+    &__phone-number {
+        @include text($font-more-standard, $font-weight-medium, $font-medium);
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 155px;
+    }
+
+    &__social-item {
+    }
+
+    &__social-img {
+    }
+}
