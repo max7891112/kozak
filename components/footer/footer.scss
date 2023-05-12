@@ -59,12 +59,27 @@
         background-color: $color-white;
         border-radius: 30px;
         color: $color-black;
+
+        &:hover {
+            background-color: $color-very-light-blue;
+            transition: all ease 0.3s;
+        }
+
+        &:active {
+            background-color: $color-light-blue;
+            color: $color-white;
+            transition: all ease 0.3s;
+        }
     }
 
     &__social {
         justify-content: flex-start;
         gap: 25px;
         padding-top: 35px;
+    }
+
+    &__social-img {
+        fill: red;
     }
 
     &__mail {

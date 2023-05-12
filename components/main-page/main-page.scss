@@ -15,6 +15,18 @@
         @include text($font-standard, $font-weight-regular, 17px);
     }
 
+    &__menu-navigation-item {
+        &:hover {
+            color: $color-light-blue;
+            transition: all ease 0.3s;
+        }
+
+        &:active {
+            color: $color-light-blue;
+            transition: all ease 0.3s;
+        }
+    }
+
     &__slogan-box {
         padding-top: 40px;
     }
@@ -71,6 +83,16 @@
         color: $color-white;
         @include text($font-standard, $font-weight-light, 17px);
         margin-bottom: 10px;
+
+        &:hover {
+            background-color: $color-light-blue;
+            transition: all ease 0.3s;
+        }
+
+        &:active {
+            background-color: $color-black;
+            transition: all ease 0.3s;
+        }
     }
 
     &__light-btn {
@@ -84,6 +106,18 @@
         color: $color-dark-blue;
         border: 1px solid $color-dark-blue;
         @include text($font-standard, $font-weight-light, 17px);
+
+        &:hover {
+            color: $color-light-blue;
+            border: 1px solid $color-light-blue;
+            transition: all ease 0.3s;
+        }
+
+        &:active {
+            color: $color-black;
+            border: 1px solid $color-black;
+            transition: all ease 0.3s;
+        }
     }
 
     &__bottom-part {
