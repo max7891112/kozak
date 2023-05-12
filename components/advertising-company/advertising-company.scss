@@ -1,0 +1,48 @@
+.advertising-company {
+
+    &__container {
+        padding-top: 120px;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left-p {
+    }
+
+    &__sloagn {
+        @include text($font-large, $font-weight-bold, 130%);
+    }
+
+    &__box-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0 100px 0;
+        max-width: 392px;
+        margin-right: 123px;
+    }
+
+    &__item-text {
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__btn {
+        width: 289px;
+        height: 48px;
+        border-radius: 30px;
+        background: $color-dark-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__right-p {
+    }
+
+    &__img {
+    }
+}

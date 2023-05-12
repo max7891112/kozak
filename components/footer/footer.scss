@@ -1,0 +1,81 @@
+.footer {
+    background-color: $color-dark-blue;
+    color: $color-white;
+
+    &_link {
+    }
+
+    &__container {
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__info {
+        padding: 64px 0 60px 0;
+    }
+
+    &__mid-box-text {
+        padding-top: 20px;
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__policy {
+        @include text(12px, $font-weight-light, 130%);
+        padding-top: 25px;
+    }
+
+    &__years {
+        @include text(12px, $font-weight-light, 130%);
+        padding-top: 10px;
+    }
+
+    &__anchors {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @include text($font-standard, $font-weight-light, 130%);
+        padding-left: 143px;
+        gap: 28px;
+    }
+
+    &__contacts {
+        padding: 60px 0 0 400px;
+    }
+
+    &__schedule {
+        padding: 10px 0 10px 0;
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__btn {
+        width: 221px;
+        height: 46px;
+        background-color: $color-white;
+        border-radius: 30px;
+        color: $color-black;
+    }
+
+    &__social {
+        justify-content: flex-start;
+        gap: 25px;
+        padding-top: 35px;
+    }
+
+    &__mail {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__mailto {
+        @include text($font-standard, $font-weight-light, 130%);
+        padding-left: 9px;
+    }
+}
+

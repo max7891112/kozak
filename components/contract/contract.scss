@@ -1,0 +1,32 @@
+.contract {
+
+    padding-top: 160px;
+
+    &_img {
+    }
+
+    &__container {
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left-p {
+    }
+
+    &__right-p {
+        padding-left: 123px;
+    }
+
+    &__slogan {
+        padding-top: 65px;
+        @include text($font-large, $font-weight-bold, 130%);
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        @include text($font-standard, $font-weight-light, 130%);
+        padding-bottom: 35px;
+    }
+}
