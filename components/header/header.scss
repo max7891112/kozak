@@ -1,5 +1,8 @@
 .header {
 
+    position: fixed;
+    z-index: 999;
+
     width: 100%;
     // background-color: $color-dark-blue;
     background-color: $color-dark-blue;
@@ -59,6 +62,31 @@
     }
 
     &__social-item {
+        
+        &:hover {
+            .str path {
+                stroke: $color-light-blue;
+            }
+        }
+
+        &:active {
+            .str path {
+                stroke: $color-black;
+            }
+        }
+
+        &:hover {
+            .fl path {
+                fill: $color-light-blue;
+            }
+        }
+
+        &:active {
+            .fl path {
+                fill: $color-black;
+            }
+        }
+
     }
 
     &__social-img {
