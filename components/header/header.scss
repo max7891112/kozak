@@ -7,7 +7,7 @@
     // background-color: $color-dark-blue;
     background-color: $color-dark-blue;
     color: $color-white;
-    padding: 43px 0;
+    padding: 10px 0;
 
     &__container {
         display: flex;
@@ -90,5 +90,118 @@
     }
 
     &__social-img {
+    }
+}
+
+@media (max-width: 990px) {
+    .header {
+
+		&_logo-up-text {
+            font-size: 14px;
+		}
+
+		&_logo-down-text {
+            font-size: 12px;
+		}
+
+		&__slogan {
+            font-size: 13px;
+            line-height: 155%;
+		}
+
+		&__phone-number {
+            font-size: 14px;
+		}
+    }
+
+}
+
+@media (max-width:845px) {
+    .header {
+
+		&__logo-text {
+            display: none;
+		}
+    }
+}
+
+@media (max-width: 665px) {
+    .header {
+
+		&__slogan {
+            font-size: 11px;
+		}
+
+		&__phone-number {
+            font-size: 11px;
+		}
+
+		&__social {
+            flex-basis: 120px;
+		}
+    }
+
+}
+
+@media (max-width: 542px) {
+    .header {
+		&__social {
+            display: none;
+		}
+    }
+}
+
+@media (max-width: 410px) {
+    .header {
+
+
+		&__logo {
+            display: none;
+		}
+    }
+}
+
+@media (max-width: 345px) {
+    .header {
+
+		&_logo-up-text {
+            font-size: 10px;
+		}
+
+		&_logo-down-text {
+            font-size: 9px;
+		}
+
+		&__logo {
+            display: flex;
+		}
+
+		&__logo-text {
+            display: flex;
+            padding-left: 15px;
+		}
+
+		&__slogan {
+            display: none;
+		}
+
+		&__phone {
+            display: none;
+		}
+
+		&__social {
+            display: block;
+		}
+    }
+}
+
+@media (max-width: 329px) {
+    .header {
+
+
+		&__logo-text {
+            display: none
+		}
+
     }
 }

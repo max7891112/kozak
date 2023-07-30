@@ -148,6 +148,64 @@
   }
 }
 
+@media (max-width: 1019px) {
+    .settings {
 
+        &__title {
+            padding-top: 80px;
+        }
 
+		&__card {
+            width: 44%;
+		}
 
+		&__ticker {
+            & div p {
+               font-size: 26px;
+            }
+		}
+    }
+
+.card {
+
+		&__text-container {
+            padding: 0 10px;
+		}
+    }
+
+}
+
+@media (max-width: 595px) {
+    .settings {
+
+		&__card-container {
+            flex-direction: column;
+		}
+
+		&__card {
+            width: 100%;
+		}
+
+		&__text-card {
+            width: 100%;
+            margin-bottom: 20px;
+		}
+
+		&__ticker {
+            display: none;
+		}
+    }
+
+.card {
+
+		&_second-card {
+            margin-left: 0;
+		}
+
+		&_fourth-card {
+            margin-left: 0;
+		}
+
+    }
+
+}

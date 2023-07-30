@@ -10,7 +10,7 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
         <div class="header__container _container">
             <div class="header__logo">
                 <img src="./components/header/img/logo.svg" alt="" class="header__label">
@@ -61,7 +61,7 @@
         </div>
     </header>
 
-    <section class="main-page">
+    <section class="main-page ">
         <div class="main-page__container _container">
             <div class="main-page__menu-navigation">
                 <a href="#" class="main-page__menu-navigation-item">Этапы</a>
@@ -120,7 +120,7 @@
         </div>
     </section>
 
-    <section class="settings">
+    <section class="settings ">
         <div class="settings__container _container">
             <h2 class="settings__title"><span>Чем настройка Яндекс</span><span>может помочь вашему бизнесу?</span></h2>
             <div class="settings__card-container">
@@ -175,7 +175,7 @@
         </div>
     </section>
 
-    <section class="stage">
+    <section class="stage ">
         <div class="stage__container _container">
             <p class="stage__slogan">Движение от идеи к результату</p>
 
@@ -319,7 +319,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us ">
         <section class="settings">
             <div class="settings__container _container">
                 <h2 class="settings__title about-us__title"><span>6 фактов о нас</span></h2>
@@ -378,7 +378,7 @@
         </section>
     </section>
 
-    <section class="swiper-slider">
+    <section class="swiper-slider ">
         <div class="swiper-slider__container _container">
             <div class="swiper-slider__visable">
                 <p class="swiper-slider__slogan">Для наших клиентов мы добились таких показателей</p>
@@ -615,11 +615,11 @@
         </div>
     </section>
 
-    <section class="form">
+    <section class="form ">
         <div class="form__container _container"></div>
     </section>
 
-    <section class="contract">
+    <section class="contract ">
         <div class="contract__container _container">
             <div class="contract__wrapper">
                 <div class="contract__left-p">
@@ -635,11 +635,11 @@
         </div>
     </section>
 
-    <section class="cost-our-service">
+    <section class="cost-our-service ">
         <div class="cost-our-service__container _container"></div>
     </section>
 
-    <section class="advertising-company">
+    <section class="advertising-company ">
         <div class="advertising-company__container _container">
             <div class="advertising-company__wrapper">
                 <div class="advertising-company__left-p">
@@ -658,14 +658,14 @@
     </section>
 
     <section class="form">
-        <div class="form__container _container"></div>
+        <div class="form__container _container hidden"></div>
     </section>
 
-    <section class="questions">
+    <section class="questions ">
         <div class="questions__container _container"></div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer ">
         <div class="footer__container _container">
             <div class="footer__wrapper">
                 <div class="footer__info">
@@ -688,36 +688,44 @@
                 </div>
 
                 <div class="footer__anchors">
-                    <a href="#" class="footer_link">Этапы</a>
-                    <a href="#" class="footer_link">Наша студия</a>
-                    <a href="#" class="footer_link">Кейсы</a>
-                    <a href="#" class="footer_link">Цены</a>
-                    <a href="#" class="footer_link">Контакты</a>
+
+                    <div class="footer__anchors-box">
+                        <a href="#" class="footer_link">Этапы</a>
+                        <a href="#" class="footer_link">Наша студия</a>
+                        <a href="#" class="footer_link">Кейсы</a>
+                        <a href="#" class="footer_link">Цены</a>
+                        <a href="#" class="footer_link">Контакты</a>
+                    </div>
                 </div>
 
                 <div class="footer__contacts">
-                    <a href="tel:+7 (978) 796-34-92" class="header__phone-number">+7 (978) 796-34-92</a>
-                    <div class="footer__schedule">Пн-Пт с 10:00 до 19:00</div>
 
-                    <button class="footer__btn">Заказать звонок</button>
+                    <div class="footer__contacts-box">
 
-                    <div class="header__social footer__social">
-                        <a href="#" class="header__social-item">
-                            <img src="./components/header/img/WA.svg" alt="" class="header__social-img">
-                        </a>
-                        <a href="#" class="header__social-item">
-                            <img src="./components/header/img/telega.svg" alt="" class="header__social-img">
-                        </a>
-                        <a href="#" class="header__social-item">
-                            <img src="./components/header/img/vk.svg" alt="" class="header__social-img">
-                        </a>
-        
+                        <a href="tel:+7 (978) 796-34-92" class="header__phone-number">+7 (978) 796-34-92</a>
+                        <div class="footer__schedule">Пн-Пт с 10:00 до 19:00</div>
+    
+                        <button class="footer__btn">Заказать звонок</button>
+    
+                        <div class="header__social footer__social">
+                            <a href="#" class="header__social-item">
+                                <img src="./components/header/img/WA.svg" alt="" class="header__social-img">
+                            </a>
+                            <a href="#" class="header__social-item">
+                                <img src="./components/header/img/telega.svg" alt="" class="header__social-img">
+                            </a>
+                            <a href="#" class="header__social-item">
+                                <img src="./components/header/img/vk.svg" alt="" class="header__social-img">
+                            </a>
+            
+                        </div>
+    
+                        <div class="footer__mail">
+                            <img src="./components/header/img/mail.svg" alt="">
+                            <a href="mailto:sergey-kozak@yandex.ru" class="footer__mailto">sergey-kozak@yandex.ru</a>
+                        </div>
                     </div>
 
-                    <div class="footer__mail">
-                        <img src="./components/header/img/mail.svg" alt="">
-                        <a href="mailto:sergey-kozak@yandex.ru" class="footer__mailto">sergey-kozak@yandex.ru</a>
-                    </div>
                 </div>
             </div>
         </div>

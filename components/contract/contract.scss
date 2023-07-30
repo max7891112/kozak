@@ -30,3 +30,49 @@
         padding-bottom: 35px;
     }
 }
+
+@media (max-width: 1056px) {
+    .contract {
+
+		&__right-p {
+            padding-left: 20px;
+		}
+
+    }
+}
+
+@media (max-width: 938px) {
+    .contract {
+
+		&_img {
+            width: 100%;
+            object-fit: contain;
+		}
+
+		&__right-p {
+            max-width: 326px;
+		}
+
+		&__slogan {
+            padding-top: 0;
+		}
+    }
+}
+
+@media (max-width: 612px) {
+    .contract {
+
+        padding-top: 100px;
+
+		&__left-p {
+            display: none;
+		}
+
+		&__right-p {
+            max-width: 100%;
+            padding-left: 0;
+		}
+
+    }
+
+}

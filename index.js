@@ -1,5 +1,7 @@
 new Swiper('.image-slider', {
 
+    loop:true,
+
     navigation: {
         nextEl: '.swiper-button-next-modern',
         prevEl: '.swiper-button-prev-modern'

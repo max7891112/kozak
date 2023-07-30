@@ -1,6 +1,7 @@
 .about-us{
     &__container{
         margin-bottom: 100px;
+        flex-direction: row;
     }
 
     &__title{
@@ -68,5 +69,72 @@
         text-align: center;
         max-height: 140px;
         overflow-y: auto;
+    }
+}
+
+@media (max-width: 1026px) {
+
+    .fact {
+
+    height: fit-content;
+
+		&__text {
+            max-height: 400px;
+		}
+    }
+   
+}
+
+@media (max-width: 744px) {
+
+    .fact {
+
+		&__title {
+            font-size: 12px;
+		}
+
+		&__text {
+            font-size: 11px;
+            line-height: 150%;
+		}
+    }
+}
+
+@media (max-width: 481px) {
+
+    .fact {
+
+        width: 50%;
+
+    }
+
+}
+
+@media (max-width: 290px) {
+
+    .fact {
+
+    
+		&__img {
+
+			&_first {
+			}
+
+			&_second {
+			}
+
+			&_third {
+			}
+		}
+
+		&__title {
+            font-size: 10px;
+		}
+
+		&__text {
+		}
+
+		&__group-people-container {
+		}
     }
 }
