@@ -1,0 +1,110 @@
+.cost-our-service {
+    width: 100%;
+    
+
+    &__container {
+        
+    }
+
+    &__title {
+        padding: 60px 0;
+        @include text(32px, 700, 130%);
+        @media (max-width: 500px) {
+            font-size: 25px;
+            padding: 30px 0;
+        }
+    }
+
+    &__subtitle {
+        @include text(22px, 500, 130%);
+        padding-bottom: 27px;
+        @media (max-width: 500px) {
+            font-size: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    &__cost-rate-container {
+        display: flex;
+        @media (max-width: 850px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__cost-rate {
+    }
+}
+.cost-rate {
+    width: 33%;
+    margin-bottom: 60px;
+    text-align: center;
+    background-color: $color-very-light-blue;
+    padding: 48px 30px 30px 30px;
+    border-radius: 20px;
+    height: 915px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 1150px) {
+        height: auto;
+        justify-content: baseline;
+    }
+    @media (max-width: 850px) {
+        width: 80%;
+    }
+
+    &__title {
+        @include text(22px, 500, 130%);
+        margin-bottom: 20px;
+        @media (max-width: 500px) {
+            font-size: 18px;
+        }
+    }
+
+    &__p {
+        @include text(14px, 300, 130%);
+        margin-bottom: 15px;
+    }
+
+    &__another-p {
+        max-width: 226px;
+        max-height: 210px;
+        @include text(14px, 300, 130%);
+        padding: 20px;
+        background-color: $color-white;
+        border-radius: 20px;
+        margin: 40px auto 20px auto;
+    }
+
+    &__cost {
+        @include text(18px, 500, 130%);
+        margin-bottom: 40px;
+    }
+
+    &__p-container{
+        @media (max-width: 1150px) {
+            display: none;
+        }
+        @media (max-width: 850px) {
+            display: block;
+        }
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &_base{
+        margin-right: 10px;
+    }
+
+    &_optimum{
+        background-color: $color-light-blue;
+    }
+
+    &_max{
+        margin-left: 10px ;
+    }
+}

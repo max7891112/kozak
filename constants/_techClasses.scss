@@ -1,0 +1,79 @@
+._container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+._discassion-button{
+    @include text(14px, 300, 130%);
+    color: $color-white;
+    padding: 15px 20px;
+    background-color: $color-dark-blue;
+    border-radius: 30px;
+    transition: all .3s ease 0s;
+
+    &:hover{
+        background-color: $color-black;
+    }
+
+    &:active{
+        background-color: $color-white;
+        color: $color-black;
+    }
+}
+
+._order-button{
+    @include text(14px, 300, 130%);
+    width: 100%;
+    border-radius: 30px;
+    background-color: $color-dark-blue;
+    padding: 15px 20px;
+    color: $color-white;
+    transition: all .3s ease 0s;
+    &:hover{
+        background-color: $color-light-blue;
+    }
+    &:active{
+        background-color: $color-black;
+    }
+}
+
+._navigation{
+    transition: all ease 0.3s;
+        &:hover {
+            color: $color-light-blue;
+        }
+
+        &:active {
+            color: $color-light-blue;
+        }
+}
+
+._transparent-btn{
+        width: 289px;
+        height: 48px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-white;
+        color: $color-dark-blue;
+        border: 1px solid $color-dark-blue;
+        @include text($font-standard, $font-weight-light, 17px);
+        transition: all .3s ease;
+        
+        &:hover {
+            color: $color-light-blue;
+            border: 1px solid $color-light-blue;
+            
+        }
+
+        &:active {
+            color: $color-black;
+            border: 1px solid $color-black;
+        }
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,206 @@
+.swiper-slider {
+    padding-bottom: 120px;
+
+    &__container {
+        padding-top: 120px;
+    }
+
+    &__visable {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__slogan {
+        @include text($font-large, $font-weight-bold, 130%);
+        padding-bottom: 60px;
+    }
+
+    &__move-part {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    &__left-p {
+        max-width: 602px;
+    }
+
+    &__subslogan {
+        @include text(20px, $font-weight-medium, 130%);
+        padding-bottom: 15px;
+    }
+
+    &__box-text {
+    }
+
+    &__bold {
+        @include text($font-more-standard, $font-weight-medium, 130%);
+        padding-bottom: 10px;
+    }
+
+    &__main-text {
+        @include text($font-standard, $font-weight-light, 130%);
+        padding-bottom: 20px;
+        
+        & ul li {
+          list-style: disc;  
+        }
+
+        & ul {
+            padding-left: 19px;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__chekbox-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding-bottom: 5px;
+
+        & span {
+            @include text($font-medium, $font-weight-medium, 130%); 
+        }
+        
+        & p {
+            padding: 0;
+        }
+    }
+
+    &__right-p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__indicators {
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        z-index: 10;
+        right: 0;
+    }
+
+    &__points-box {
+        position: absolute;
+        top: 115px;
+        width: fit-content;
+        height: fit-content;
+        bottom: 0;
+        padding-right: 0;
+
+    }
+
+    &__points-item {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__arrows-left {
+    }
+
+    &__arrows-right {
+    }
+
+    &__right-img {
+        padding-top: 74px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__btn-p {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    &__btn-dark {
+        width: 289px;
+        height: 48px;
+        color: $color-white;
+        background: $color-dark-blue;
+        border-radius: 30px;
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: $color-light-blue;
+            transition: all ease 0.3s;
+        }
+
+        &:active {
+            background-color: $color-black;
+            transition: all ease 0.3s;
+        }
+    }
+
+    &__light-dark {
+        width: 289px;
+    }
+}
+
+.image-slider {
+    position: relative;
+}
+
+.swiper-paginations {
+    position: absolute;
+    bottom: 50px;
+}
+
+// Обнуление под паганацию
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: none;
+    top: none;
+    left: none;
+    width: none;
+
+    bottom: 0 !important;
+    top: 9px !important;
+    right: 103px !important;
+    left: auto !important;
+    width: fit-content !important;
+}
+
+@media (max-width: 595px) {
+    .swiper-slider {
+
+		&__container {
+            padding-top: 0;
+		}
+}
+
+}
+
+@media (max-width: 768px) {
+    .swiper-slider {
+
+		&__indicators {
+            top: -44px;
+		}
+
+		&__right-img {
+            display: none;
+		}
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: -33px !important;
+    }
+
+}

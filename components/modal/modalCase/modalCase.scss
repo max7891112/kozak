@@ -1,0 +1,206 @@
+.case {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    @include text(14px, 300, 130%);
+    z-index: 40;
+
+    span{
+        @include text(22px, 500, 130%);
+    }
+
+    &__body {
+        max-width: 1220px;  
+        height: 575px;
+        background-color: $color-white;
+        position: relative;
+        border-radius: 20px 0 0 20px;
+        padding: 40px 20px 40px 40px;
+        overflow-y: auto;
+    }
+
+    &__close {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        cursor: pointer;
+    }
+
+    &__container {
+    }
+
+    &__title {
+        @include text(32px, 700, 130%);
+        padding-bottom: 20px;
+        @media (max-width: 500px) {
+            font-size: 25px;
+        }
+        @media (max-width: 350px) {
+            font-size: 20px;
+        }
+    }
+
+    &__client {
+        padding-bottom: 10px;
+        span{
+            margin-right: 10px;
+        }
+    }
+
+    &__task-container {
+        display: flex;
+        margin-bottom: 10px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__task-title {
+        margin-right: 10px;
+    }
+
+    &__task-text {
+        max-width: 830px;
+        margin-top: 6px;
+    }
+
+    &__did-container {
+        display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__did-title {
+        margin-right: 35px;
+    }
+
+    &__did-ul {
+        max-width: 830px;
+        margin-top: 2px;
+    }
+
+    &__did-li {
+        padding: 3px 0;
+    }
+
+    &__results-container {
+        display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__results-title {
+        margin-right: 48px;
+        @media (max-width: 768px) {
+            margin-right: 25px;
+        }
+    }
+
+    &__results-ul {
+        max-width: 930px;
+        margin-top: -12px;
+    }
+
+    &__results-li {
+        padding: 3px 0;
+        list-style: none;
+        position: relative;
+        padding: 10px 10px;
+        &::after{
+            content: "";
+            width: 32px;
+            height: 32px;
+            background-image: url('./components/modal/modalCase/img/check.svg');
+            position: absolute;
+            top: 18%;
+            left: -4%;
+        }
+        @media (max-width: 768px) {
+            padding: 10px 0 10px 30px;
+        }
+    }
+
+    &__img-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 768px) {
+            img {
+                width: 500px;
+            };
+        }
+        @media (max-width: 550px) {
+            img {
+                width: 400px;
+            };
+        }
+        @media (max-width: 450px) {
+            img {
+                display: none
+            };
+        }
+    }
+}
+
+.case__body.disappearance{
+    animation: zoomReverse .3s linear forwards;
+}
+
+.case__body.open{
+    animation: zoom .3s linear forwards;
+}
+
+.case.open{
+    animation: fade .3s linear forwards;
+}
+
+.case.disappearance{
+    animation: fadeReverse .3s linear forwards;
+}
+
+@keyframes zoomReverse {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.1);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes fade{
+    0% {
+        background-color: rgba(0,0,0,0);
+    } 
+    100% {
+        background-color: rgba(0,0,0,.7);
+    }
+}
+
+@keyframes fadeReverse{
+    0% {
+        background-color: rgba(0,0,0,.7);
+    } 
+    100% {
+        background-color: rgba(0,0,0,0);
+    }
+}

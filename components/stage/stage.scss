@@ -1,0 +1,565 @@
+.stage {
+
+    &__container {
+    }
+
+    &__slogan {
+        @include text($font-large, $font-weight-bold, 130%);
+        padding-top: 120px;
+    }
+
+    &__items {
+        padding: 60px 0 120px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    &__item {
+        display: flex;
+        flex-grow: 0;
+    }
+
+    &__item-part-first {
+
+    }
+
+    &__number {
+    }
+
+    &__part-first-text {
+        padding-top: 20px;
+        @include text($font-standard, $font-weight-regular, 130%);
+        min-width: 281px;
+
+        & span {
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+    &__img-circle {
+        padding-left: 40px;
+        align-self: start;
+    }
+
+    &__item-part-third {
+        padding-left: 20px;
+    }
+
+    &__item-third-slogan {
+        @include text($font-medium, $font-weight-medium, 130%);
+        padding-bottom: 20px;
+    }
+
+    &__box-text {
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__box-text-item {
+    }
+
+    &__results {
+        padding-top: 20px;
+    }
+
+    &__results-slogan {
+        @include text($font-more-standard, $font-weight-medium, 130%);
+        padding-bottom: 10px;
+    }
+
+    &__check-area {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__check-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__check-img {
+        padding-right: 20px;
+    }
+
+    &__check-text {
+    }
+
+    //greeting
+
+    &__greeting {
+    }
+
+    &__greeting-area {
+        position: relative;
+        min-height: 493px;
+        color: $color-white;
+    }
+
+    &__notebook-img {
+        position: absolute;
+        max-width: 1200px;
+        z-index: -20;
+    }
+
+    &__greeting-sloagn {
+        @include text($font-medium, $font-weight-medium, 130%);
+        padding: 70px 0 20px 668px;
+    }
+
+    &__greeting-box-text {
+        padding-left: 668px;
+        @include text($font-standard, $font-weight-light, 130%);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &__parts {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 120px 0;
+    }
+
+    &__greeting-left-p {
+        // max-width: 760px;
+    }
+
+    &__greeting-l-p-slogan {
+        @include text($font-medium, $font-weight-medium, 130%);
+        width: 100%;
+        min-width: 760px;
+    }
+
+    &__greeting-l-p-text {
+        padding-top: 33px;
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__greeting-right-p {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    &__greeting-up {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &__greeting-up-item {
+        width: 50%;
+    }
+
+    &__greeting-up-slogan {
+        @include text($font-more-standard, $font-weight-medium, 130%);
+    }
+
+    &__greeting-up-text {
+        @include text($font-standard, $font-weight-light, 130%);
+    }
+
+    &__greeting-down {
+    }
+}
+
+@media (max-width: 1226px) {
+    .stage {
+
+		&__item-part-first {
+            width: 200px;
+		}
+
+		&__number {
+            width: 100%;
+            object-fit: contain;
+		}
+
+		&__part-first-text {
+            min-width: 170px;
+		}
+
+		&__notebook-img {
+            width: 100%;
+            object-fit: contain;
+		}
+
+		&__greeting-sloagn {
+            width: fit-content;
+            display: block;
+            margin: 0 0 70px auto;
+            padding: 70px 30px 0 0;
+		}
+
+		&__greeting-box-text {
+            width: fit-content;
+            margin: 0 0 70px auto;
+            padding: 0 168px 0 0;
+		}
+
+		&__greeting-left-p {
+            flex-shrink: 1;
+            margin-right: 20px;
+		}
+
+		&__greeting-l-p-slogan {
+            min-width: 0;
+		}
+
+		&__greeting-l-p-text {
+		}
+
+		&__greeting-right-p {
+            flex-basis: 350px;
+            flex-shrink: 0;
+		}
+
+        &__greeting-area {
+            min-height: 0;
+        }
+
+        &__parts {
+            padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .stage {
+
+		&__greeting-sloagn {
+            font-size: 16px;
+            padding-top: 35px;
+            margin-bottom: 30px;
+		}
+
+		&__greeting-box-text {
+            padding-right: 48px;
+		}
+    }
+}
+
+@media (max-width: 910px) {
+    .stage {
+
+		&__greeting-l-p-slogan {
+            font-size: 17px;
+		}
+
+		&__greeting-l-p-text {
+            padding-top: 23px;
+		}
+    }
+}
+
+@media (max-width: 839px) {
+    .stage {
+
+		&__img-circle {
+            width: 200px;
+		}
+
+		&__greeting-sloagn {
+            font-size: 13px;
+            margin-bottom: 15px;
+		}
+
+		&__greeting-box-text {
+            font-size: 11px;
+            gap: 15px;
+            padding-right: 52px;
+		}
+    }
+}
+
+@media (max-width: 647px) {
+    .stage {
+
+		&__item-part-first {
+            width: 100px;
+		}
+
+		&__part-first-text {
+            min-width: 0;
+            font-size: 10px;
+		}
+
+		&__box-text {
+            font-size: 11px;
+		}
+
+		&__check-area {
+            font-size: 11px;
+		}
+
+		&__greeting-sloagn {
+            font-size: 9px;
+            padding-top: 20px;
+		}
+
+		&__greeting-box-text {
+            font-size: 8px;
+            padding-right: 36px;
+            line-height: 154%;
+		}
+    }
+}
+
+@media (max-width: 595px) {
+    .stage {
+
+		&__slogan {
+            padding-top: 50px;
+		}
+    }
+}
+
+@media (max-width: 571px) {
+    .stage {
+
+		&__container {
+		}
+
+		&__slogan {
+		}
+
+		&__items {
+		}
+
+		&__item {
+		}
+
+		&__item-part-first {
+		}
+
+		&__number {
+		}
+
+		&__part-first-text {
+		}
+
+		&__img-circle {
+		}
+
+		&__item-part-third {
+		}
+
+		&__item-third-slogan {
+            font-size: 15px;
+		}
+
+		&__box-text {
+		}
+
+		&__box-text-item {
+		}
+
+		&__results {
+		}
+
+		&__results-slogan {
+		}
+
+		&__check-area {
+		}
+
+		&__check-item {
+		}
+
+		&__check-img {
+		}
+
+		&__check-text {
+		}
+
+		&__greeting {
+		}
+
+		&__greeting-area {
+		}
+
+		&__notebook-img {
+		}
+
+		&__greeting-sloagn {
+		}
+
+		&__greeting-box-text {
+		}
+
+		&__greeting-text {
+		}
+
+		&__parts {
+            padding-top: 0;
+            padding-bottom: 50px;
+		}
+
+		&__greeting-left-p {
+		}
+
+		&__greeting-l-p-slogan {
+		}
+
+		&__greeting-l-p-text {
+		}
+
+		&__greeting-right-p {
+            display: none;
+		}
+
+		&__greeting-up {
+		}
+
+		&__greeting-up-item {
+		}
+
+		&__greeting-up-slogan {
+		}
+
+		&__greeting-up-text {
+		}
+
+		&__greeting-down {
+		}
+    }
+}
+
+@media (max-width: 481px) {
+    .stage {
+
+		&__part-first-text {
+            min-width: 100px;
+		}
+
+		&__img-circle {
+            display: none;
+		}
+
+		&__greeting {
+            display: none;
+		}
+    }
+}
+
+@media (max-width: 320px) {
+    .stage {
+
+		&__container {
+		}
+
+		&__slogan {
+            font-size: 28px;
+		}
+
+		&__items {
+            padding-bottom: 40px;
+		}
+
+		&__item {
+		}
+
+		&__item-part-first {
+		}
+
+		&__number {
+		}
+
+		&__part-first-text {
+            font-size: 8px;
+		}
+
+		&__img-circle {
+		}
+
+		&__item-part-third {
+		}
+
+		&__item-third-slogan {
+            font-size: 10px;
+		}
+
+		&__box-text {
+            font-size: 8px;
+		}
+
+		&__box-text-item {
+		}
+
+		&__results {
+		}
+
+		&__results-slogan {
+            font-size: 14px;
+		}
+
+		&__check-area {
+            font-size: 7px;
+            // display: none;
+		}
+
+		&__check-item {
+		}
+
+		&__check-img {
+            padding-right: 3px;
+		}
+
+		&__check-text {
+		}
+
+		&__greeting {
+		}
+
+		&__greeting-area {
+		}
+
+		&__notebook-img {
+		}
+
+		&__greeting-sloagn {
+		}
+
+		&__greeting-box-text {
+		}
+
+		&__greeting-text {
+		}
+
+		&__parts {
+		}
+
+		&__greeting-left-p {
+		}
+
+		&__greeting-l-p-slogan {
+		}
+
+		&__greeting-l-p-text {
+		}
+
+		&__greeting-right-p {
+		}
+
+		&__greeting-up {
+		}
+
+		&__greeting-up-item {
+		}
+
+		&__greeting-up-slogan {
+		}
+
+		&__greeting-up-text {
+		}
+
+		&__greeting-down {
+		}
+    }
+}

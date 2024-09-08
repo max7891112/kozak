@@ -1,0 +1,129 @@
+.form {
+    background-color: $color-very-light-blue;
+    width: 100%;
+    border-radius: 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        @media (max-width: 999px) {
+            flex-direction: column;
+        }
+    }
+
+    &__text-part {
+        width: 40%;
+        padding-right: 20px;
+        &_second-form{
+            width: 50%;
+        }
+        @media (max-width: 999px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        @include text(32px, 700, 130%);
+        padding: 40px 0 30px 0;
+        @media (max-width: 999px) {
+            font-size: 30px;
+        }
+        @media (max-width: 768px) {
+            font-size: 25px;
+            padding: 20px 0 15px 0;
+        }
+        @media (max-width: 420px) {
+            font-size: 20px;
+        }
+    }
+
+    &__subtitle {
+        @include text(18px, 500, 130%);
+        padding-bottom: 30px;
+    }
+
+    &__text {
+        @include text(14px, 300, 130%);
+        padding-bottom: 55px;
+        @media (max-width: 768px) {
+            padding-bottom: 25px;
+        }
+    }
+
+    &__form {
+        width: 495px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 50px 0;
+        @media (max-width: 999px) {
+            width: 100%;
+            align-items: center;
+            margin: 20px 0 60px 0;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border-radius: 8px; 
+        border: 2px solid $color-dark-blue;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background-color: $color-very-light-blue;
+        &_name {
+            &._error{
+                border: 2px solid $color-red;
+            }
+    
+            &._error::-moz-placeholder {
+                color: $color-red;
+            }
+
+            &:focus::-webkit-input-placeholder{
+                color: transparent
+            }
+    
+            &:focus::-moz-placeholder{
+                color: transparent
+            }
+    
+            &:focus::-ms-input-placeholder{
+                color: transparent
+            }
+        }
+
+        &_phone {
+            &._error{
+                border: 2px solid $color-red;
+            }
+        }
+
+        &:focus{
+            border: 2px solid $color-light-blue;
+        }
+
+        @media (max-width: 999px) {
+            width: 50%;
+        }
+        @media (max-width: 768px) {
+            width: 75%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+
+    }
+
+    &__button {
+        @media (max-width: 999px) {
+            width: 50%;
+        }
+        @media (max-width: 768px) {
+            width: 75%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+}

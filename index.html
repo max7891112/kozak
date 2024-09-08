@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kozak</title>
+    <link rel="icon" type="image/svg+xml" href="./components/about-us/img/office.svg" />
+    <link rel="stylesheet" href="./index.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="modalForm"></div>
+    <div class="modalCaseFirst"></div>
+    <header class="header ">
+        <div class="header__container _container">
+            <div class="header__logo">
+                <a href="#"><img src="./components/header/img/logo.svg" alt="logo" class="header__label _smooth-link" data-goto=".main-page_anchor"></a>
+                <div class="header__logo-text">
+                    <p class="header_logo-up-text">Козак Контекст</p>
+                    <p class="header_logo-down-text">студия трафика</p>
+                </div>
+            </div>
+
+            <h1 class="header__slogan">Рекламируй правильно, <br> зарабатывай много</h1>
+
+            <div class="header__phone">
+                <img src="./components/header/img/phone.svg" alt="" class="header__phone-img">
+                <a href="tel:+7 (978) 796-34-92" class="header__phone-number">+7 (978) 796-34-92</a>
+            </div>
+
+            <div class="header__social">
+                <a href="#" class="header__social-item">
+                    <svg class="fl" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7564 11.8275L12.6189 10.2587C12.5262 10.2127 12.423 10.1918 12.3198 10.1984C12.2165 10.2049 12.1167 10.2386 12.0306 10.296L10.4932 11.3206C9.71491 10.9222 9.0817 10.289 8.68326 9.51064L9.70884 7.97423C9.76625 7.88812 9.79993 7.78838 9.80647 7.68509C9.81301 7.5818 9.79218 7.47862 9.7461 7.38595L8.17733 4.24841C8.12855 4.15025 8.05332 4.06767 7.96012 4.00998C7.86692 3.95229 7.75945 3.92179 7.64983 3.92192C6.66169 3.92192 5.71401 4.31446 5.01528 5.01318C4.31656 5.71191 3.92402 6.65959 3.92402 7.64773C3.92661 9.88327 4.81582 12.0265 6.39659 13.6073C7.97736 15.188 10.1206 16.0773 12.3561 16.0799C13.3443 16.0799 14.292 15.6873 14.9907 14.9886C15.6894 14.2899 16.082 13.3422 16.082 12.354C16.082 12.2447 16.0515 12.1375 15.994 12.0445C15.9365 11.9515 15.8543 11.8764 15.7564 11.8275ZM12.3561 14.9033C10.4326 14.9009 8.58844 14.1358 7.22827 12.7756C5.8681 11.4154 5.10292 9.57131 5.10059 7.64773C5.10065 7.03248 5.32321 6.438 5.72722 5.97399C6.13123 5.50997 6.68943 5.20772 7.29882 5.123L8.54011 7.60557L7.52139 9.13316C7.46787 9.21373 7.43503 9.30625 7.4258 9.40253C7.41656 9.49882 7.43121 9.5959 7.46845 9.68517C8.0094 10.9713 9.03255 11.9945 10.3187 12.5354C10.408 12.5727 10.505 12.5873 10.6013 12.5781C10.6976 12.5688 10.7901 12.536 10.8707 12.4825L12.3983 11.4638L14.8809 12.705C14.7962 13.3144 14.4939 13.8726 14.0299 14.2766C13.5659 14.6807 12.9714 14.9032 12.3561 14.9033ZM10.003 2.20428e-07C8.26929 -0.00036373 6.56528 0.449969 5.05812 1.30682C3.55097 2.16367 2.29245 3.39759 1.40603 4.88755C0.519614 6.3775 0.0357485 8.0723 0.00190601 9.80566C-0.0319365 11.539 0.385407 13.2514 1.21299 14.7748L0.0736748 18.1938C-0.00698272 18.4356 -0.018688 18.6952 0.039871 18.9433C0.09843 19.1914 0.224939 19.4184 0.405219 19.5986C0.585498 19.7789 0.812424 19.9054 1.06056 19.964C1.3087 20.0226 1.56824 20.0108 1.8101 19.9302L5.22903 18.7909C6.56737 19.5172 8.05388 19.9282 9.57522 19.9928C11.0966 20.0573 12.6125 19.7736 14.0076 19.1633C15.4026 18.553 16.6399 17.6322 17.625 16.4711C18.6101 15.31 19.3171 13.9393 19.6921 12.4634C20.067 10.9876 20.1 9.44567 19.7885 7.95517C19.4771 6.46466 18.8293 5.06496 17.8948 3.86279C16.9602 2.66062 15.7635 1.68773 14.3958 1.0183C13.0282 0.348876 11.5257 0.00058913 10.003 2.20428e-07ZM10.003 18.8252C8.4518 18.8256 6.92793 18.417 5.58495 17.6408C5.49542 17.5893 5.39407 17.5619 5.2908 17.5614C5.2275 17.5617 5.16465 17.572 5.10451 17.5917L1.4385 18.8134C1.40395 18.8249 1.36687 18.8266 1.33142 18.8183C1.29598 18.8099 1.26356 18.7918 1.2378 18.7661C1.21205 18.7403 1.19398 18.7079 1.18561 18.6724C1.17725 18.637 1.17892 18.5999 1.19044 18.5654L2.41212 14.9033C2.43855 14.8241 2.44785 14.7403 2.4394 14.6573C2.43094 14.5743 2.40493 14.494 2.36309 14.4219C1.38973 12.7404 0.998479 10.7848 1.25004 8.85828C1.50161 6.9318 2.38193 5.14218 3.75442 3.76708C5.12691 2.39198 6.91486 1.50827 8.84086 1.25305C10.7669 0.997824 12.7233 1.38536 14.4065 2.35553C16.0898 3.32571 17.4059 4.82428 18.1505 6.61875C18.8951 8.41323 19.0268 10.4033 18.5249 12.2802C18.0231 14.1571 16.9159 15.816 15.375 16.9993C13.8342 18.1827 11.9458 18.8245 10.003 18.8252Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-item">
+                    <svg class="str" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.0991 1C20.7154 1 21.1804 1.54774 20.9317 2.56654L17.915 16.9721C17.7041 17.9964 17.0932 18.2429 16.2498 17.7664L9.05408 12.3821C9.02618 12.3618 9.00344 12.3351 8.98776 12.3041C8.97208 12.2731 8.9639 12.2388 8.9639 12.2041C8.9639 12.1693 8.97208 12.135 8.98776 12.104C9.00344 12.073 9.02618 12.0463 9.05408 12.026L17.3635 4.42338C17.742 4.08378 17.2824 3.91946 16.7851 4.2262L6.35635 10.8922C6.32472 10.9131 6.28881 10.9264 6.25134 10.9312C6.21387 10.9359 6.17583 10.932 6.1401 10.9196L1.71236 9.50095C0.728415 9.21064 0.728414 8.52597 1.93401 8.03848L19.6504 1.11503C19.7909 1.04673 19.9435 1.00762 20.0991 1V1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>   
+                </a>
+                <a href="#" class="header__social-item">
+                    <svg class="str" width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5487 15.8977V11.5071C20.7508 11.9567 21.7631 14.2777 23.802 15.8977H29C27.7004 13.2256 25.7614 10.8588 23.3282 8.97456C25.1949 6.60732 27.1764 4.37894 28.1456 1H23.4215C21.5692 3.58545 20.5928 6.61393 17.5487 8.61087V1H10.6923L12.3292 2.8647V9.51016C9.67282 9.22583 7.87795 4.74923 5.93231 1H1C2.79487 6.0651 6.57128 17.1805 17.5487 15.8977Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>     
+                </a>
+                <a href="#" class="header__social-item">
+                    <svg class="str" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.3333 0.833496H1.66667C1.02233 0.833496 0.5 1.35583 0.5 2.00016V16.0002C0.5 16.6445 1.02233 17.1668 1.66667 17.1668H20.3333C20.9777 17.1668 21.5 16.6445 21.5 16.0002V2.00016C21.5 1.35583 20.9777 0.833496 20.3333 0.833496Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.3333 1.4165L11 10.1665L1.66666 1.4165" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-page main-page_anchor">
+        <div class="main-page__container _container">
+            <div class="main-page__menu-navigation">
+                <a href="#" class="main-page__menu-navigation-item _navigation _smooth-link" data-goto=".stage_anchor">Этапы</a>
+                <a href="#" class="main-page__menu-navigation-item _navigation _smooth-link" data-goto=".stage__greeting_anchor">Наша студия</a>
+                <a href="#" class="main-page__menu-navigation-item _navigation _smooth-link" data-goto=".swiper_anchor">Кейсы</a>
+                <a href="#" class="main-page__menu-navigation-item _navigation _smooth-link" data-goto=".cost-our-service_anchor">Цены</a>
+            </div>
+
+            <div class="main-page__slogan-box">
+                <p class="main-page__slogan">
+                    Стабильный поток клиентов
+                </p>
+                <p class="main-page__slogan">
+                    для вашего бизнеса
+                </p>
+            </div>
+
+            <div class="main-page__middle">
+                <div class="main-page__left-part">
+                    <img src="./components/main-page/img/tablet.png" alt="" class="main-page__img">
+                </div>
+
+                <div class="main-page__right-part">
+                    <p class="main-page__right-part-text">С помощью инструментов<br> Яндекс Директ</p>
+                    <div class="main-page__right-part-checks">
+                        <div class="main-page__right-part-item">
+                            <img src="./components/main-page/img/checkmark.svg" alt="" class="main-page__right-part-img">По выгодной цене
+                        </div>
+                        <div class="main-page__right-part-item">
+                            <img src="./components/main-page/img/checkmark.svg" alt="" class="main-page__right-part-img">С гарантией результата
+                        </div>
+                    </div>
+                    <button class="main-page__dark-btn _order-button _order-form">Заказать консультацию</button>
+                    <button class="main-page__light-btn _transparent-btn">Смотреть работы</button>
+                </div>
+            </div>
+
+            <div class="main-page__bottom-part">
+                <div class="main-page__bottom-part-items">
+
+                    <div class="main-page__bottom-part-item">
+                        <img src="./components/main-page/img/user.svg" alt="" class="main-page__bottom-part-img">
+                        <p class="main-page__bottom-part-text">Персональная стратегия с учетом опыта в вашей нише</p>
+                    </div>
+                    <div class="main-page__bottom-part-item">
+                        <img src="./components/main-page/img/setting.svg" alt="" class="main-page__bottom-part-img">
+                        <p class="main-page__bottom-part-text">Выстраиваем систему, которая работает 24/7</p>
+                    </div>
+                    <div class="main-page__bottom-part-item">
+                        <img src="./components/main-page/img/grafik.svg" alt="" class="main-page__bottom-part-img">
+                        <p class="main-page__bottom-part-text">Играем вдолгую, растим бизнес клиента</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="settings ">
+        <div class="settings__container _container">
+            <h2 class="settings__title"><span>Чем настройка Яндекс</span><span>может помочь вашему бизнесу?</span></h2>
+            <div class="settings__card-container">
+                <div class="settings__card card card_first-card">
+                    <img src="./components/settings/img/Launchpad.svg" alt="rocket">
+                    <div class="card__text-container">
+                        <h3 class="card__title">Быстрый старт</h3>
+                        <p class="card__text">Первые результаты уже через 5-7 дней с момента запуска рекламы.</p>
+                    </div>
+                </div>
+
+                <div class="settings__card card card_second-card">
+                    <img src="./components/settings/img/Stocks.svg" alt="stocks">
+                    <div class="card__text-container">
+                        <h3 class="card__title">Рост объемов продаж</h3>
+                        <p class="card__text">Наращиваем объемы продаж, не выходя за пределы рекламного бюджета.</p>
+                    </div>
+                </div>
+
+                <div class="settings__card card card_third-card">
+                    <img src="./components/settings/img/Cursor.svg" alt="cursor">
+                    <div class="card__text-container">
+                        <h3 class="card__title">Целевой трафик</h3>
+                        <p class="card__text">Ваше предложение видят те, кто максимально заинтересован в ваших товарах/услугах.</p>
+                    </div>
+                </div>
+
+                <div class="settings__card card card_fourth-card">
+                    <img src="./components/settings/img/Phone.svg" alt="phone">
+                    <div class="card__text-container">
+                        <h3 class="card__title">Рост заявок и звонок</h3>
+                        <p class="card__text">Охват Яндекса – более 50 000 площадок с аудиторией более 90 000 000 человек в месяц</p>
+                    </div>
+                </div>
+
+                <div class="settings__text-card">
+                    <p class="settings__text">Контекстная реклама - самый емкий и поэтому важный сегмент perfomance-маркетинга. 
+                        Внутренний рынок огромен, а Яндекс и его инструменты дают возможность говорить с каждой аудиторией на ее языке. 
+                        Как для B2C, так и для B2B бизнесов.</p>
+                </div>
+            </div>
+        </div>
+        <div class="settings__ticker ticker">
+            <div class="ticker-wrapper__first-half">
+                <p>Рекламируйся правильно, зарабатывай много</p>
+                <p>Рекламируйся правильно, зарабатывай много</p>
+            </div>
+              <div class="ticker-wrapper__second-half">
+                <p>Рекламируйся правильно, зарабатывай много</p> 
+                <p>Рекламируйся правильно, зарабатывай много</p>
+              </div>
+        </div>
+    </section>
+
+    <section class="stage stage_anchor">
+        <div class="stage__container _container">
+            <p class="stage__slogan">Движение от идеи к результату</p>
+
+            <div class="stage__items">
+                <div class="stage__item">
+                    <div class="stage__item-part-first">
+                        <img src="./components/stage/img/first.png" alt="" class="stage__number">
+                        <p class="stage__part-first-text"><span>1 месяц:</span> Для бизнеса важно не тормозить. Бизнес не может останавливаться!</p>
+                    </div>
+                    <img src="./components/stage/img/1_circ.png" alt="" class="stage__img-circle">
+                    <div class="stage__item-part-third">
+                        <p class="stage__item-third-slogan">Шоу маст гоу он!</p>
+                        <div class="stage__box-text">
+                            <p class="stage__box-text-item">Предварительный расчет затрат на рекламу, критический порог входа в нишу</p>
+                            <p class="stage__box-text-item">Устранение критических проблем: Даже в рекламе, созданной профессионалом, есть ошибки - замылился глаз, не хватает временени... Аудит выявляет 5-10 узких мест, мешающих росту. Ваши кампании сразу работают лучше, не останавливается работа.</p>
+                        </div>
+
+                        <div class="stage__results">
+                            <p class="stage__results-slogan">Результат</p>
+
+                            <div class="stage__check-area">
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">Плохие РК начинают приносить лиды</p>
+                                </div>
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">Ранее не эффективные ключи за счет новых УТП приносят обращения по нужной цене, а не сливают бюджет</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stage__item">
+                    <div class="stage__item-part-first">
+                        <img src="./components/stage/img/second.png" alt="" class="stage__number">
+                        <p class="stage__part-first-text"><span>2-3 месяц:</span> Окружаем и ловим клиента!</p>
+                    </div>
+                    <img src="./components/stage/img/2_circ.png" alt="" class="stage__img-circle">
+                    <div class="stage__item-part-third">
+                        <p class="stage__item-third-slogan">Всегда рядом с клиентом</p>
+                        <div class="stage__box-text">
+                            <p class="stage__box-text-item">Анализ конкурентов: найти свои сильные и слабые стороны, усилить УТП, помогают создавать УТП и персонализировать кампании.</p>
+                            <p class="stage__box-text-item">Стратегия на основе CJM – путь клиента: реклама находится там, где находится наш клиент. показывает то, что он ищет (урок Мурадовых про уровни клиента)</p>
+                            <p class="stage__box-text-item">Подбор целей и CTA: правильно выбранные/настроенные цели – не напугать наших, при этом «отсечь» не наших, позволяет рационально тратить рекламный бюджет, достигая нужных результатов</p>
+                        </div>
+
+                        <div class="stage__results">
+                            <p class="stage__results-slogan">Результат</p>
+
+                            <div class="stage__check-area">
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">Растет конверсия в обращения</p>
+                                </div>
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">По «хорошим» ключам вырастает конверсия — увеличивается число лидов в рамках бюджета из-за точного попадания в боли ЦА</p>
+                                </div>
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">Разработка Стратегии интернет маркетинга позволяет ощутимо сэкономить бюджеты на рекламу и наиболее эффективно достигнуть бизнес целей кампании</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stage__item">
+                    <div class="stage__item-part-first">
+                        <img src="./components/stage/img/third.png" alt="" class="stage__number">
+                        <p class="stage__part-first-text"><span>4+ месяц:</span> Масштабирование - движение жизнь</p>
+                    </div>
+                    <img src="./components/stage/img/3_circ.png" alt="" class="stage__img-circle">
+                    <div class="stage__item-part-third">
+                        <p class="stage__item-third-slogan">Сила оптимизации рычагов</p>
+                        <div class="stage__box-text">
+                            <p class="stage__box-text-item">Измеримый результат, масштабируем то, что приносит прибыль (главное – не убрать то, что кажется ненужным, а на самом деле влияет на путь клиента (ассоциированные конверсии) после запуска и получения первой статистики (многоуровневый ретаргетинг и ремаркетинг).</p>
+                            <p class="stage__box-text-item">Сквозная аналитика, учитывающая путь пользователя от посещения сайта до конверсии в продажу и визуализированная для клиента, помогает привязывать наши конкретные действия в продвижении к конечным результатам</p>
+                        </div>
+
+                        <div class="stage__results">
+                            <p class="stage__results-slogan">Результат</p>
+
+                            <div class="stage__check-area">
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">Вырастают продажи и средний чек</p>
+                                </div>
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">Побочный эффект нашей работы - рост вашей клиентской базы</p>
+                                </div>
+                                <div class="stage__check-item">
+                                    <img src="./components/stage/img/check.svg" alt="" class="stage__check-img">
+                                    <p class="stage__check-text">На обновленные страницы привлекается новая аудитория, которая лучше конвертируется в продажу, растут средний чек и повторные покупки</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stage__greeting stage__greeting_anchor">
+                <div class="stage__greeting-area">
+                    <img src="./components/stage/img/notebook.png" alt="" class="stage__notebook-img">
+                    <p class="stage__greeting-sloagn">Здравствуйте, рады вас видеть! <br>
+                        Мы студия трафика <br> Козак Контекст</p>
+                        <div class="stage__greeting-box-text">
+                            <p class="stage__greeting-text">Наша команда маркетологов <br> помогает компаниям выстраивать<br> эффективные стратегии<br> продвижения и увеличения продаж.</p>
+                            <p class="stage__greeting-text">Студия трафика – органично<br> соединяет в себе лучшее от<br> фрилансеров и нужное от<br> брендовых агентств.</p>
+                        </div>
+                </div>
+
+                <div class="stage__parts">
+
+                    <div class="stage__greeting-left-p">
+                        <p class="stage__greeting-l-p-slogan">Время «мастеров на все руки» давно прошло, сейчас рулят сильные узкопрофильные специалисты.</p>
+                        <p class="stage__greeting-l-p-text">Вы будете работать со всей командой, но плотно общаться <br> с одним экспертом. Никаких посредников! Контакт <br> напрямую с исполнителем!</p>
+                    </div>
+    
+                    <div class="stage__greeting-right-p">
+                        <div class="stage__greeting-up">
+                            <div class="stage__greeting-up-item">
+                                <p class="stage__greeting-up-slogan">Более 100 ниш</p>
+                                <p class="stage__greeting-up-text">среди наших клиентов </p>
+                            </div>
+                            <div class="stage__greeting-up-item">
+                                <p class="stage__greeting-up-slogan">Более 5ти лет</p>
+                                <p class="stage__greeting-up-text">опыт работы </p>
+                            </div>
+                        </div>
+                        <div class="stage__greeting-down">
+                            <p class="stage__greeting-up-slogan">Каждый специалист - эксперт</p>
+                            <p class="stage__greeting-up-text">в определенном направлении,<br> разбирающийся в этом бизнесе <br> на уровне владельца.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us ">
+        <section class="settings">
+            <div class="settings__container _container">
+                <h2 class="settings__title about-us__title"><span>6 фактов о нас</span></h2>
+                <div class="settings__card-container about-us__container">
+                    <div class="settings__card fact">
+                        <img src="./components/about-us/img/Done.svg" alt="done" class="fact__img">
+                        <h3 class="fact__title">Гарантия результата</h3>
+                        <p class="fact__text">Мы настолько уверены в результате, что готовы гарантировать вам возврат</p>
+                    </div>
+
+                    <div class="settings__card fact">
+                        <img src="./components/about-us/img/User Male.svg" alt="male" class="fact__img">
+                        <h3 class="fact__title">Индивидуальный подход</h3>
+                        <p class="fact__text">Собираем рекламные связки исходя из ваших задач и возможностей с целью выжать максимум с каждого рубля.</p>
+                    </div>
+
+                    <div class="settings__card fact">
+                        <div class="fact__group-people-container">
+                            <img src="./components/about-us/img/User Male.svg" alt="male" class="fact__img fact__img_first">
+                            <img src="./components/about-us/img/User Male.svg" alt="male" class="fact__img fact__img_second">
+                            <img src="./components/about-us/img/User Male.svg" alt="male" class="fact__img fact__img_third">
+                        </div>
+                        <h3 class="fact__title">Команда профессионалов</h3>
+                        <p class="fact__text">Опыт работы как с масштабными проектами и стратегиями, так и с отдельными задачами</p>
+                    </div>
+
+                    <div class="settings__card fact">
+                        <img src="./components/about-us/img/Key.svg" alt="key" class="fact__img">
+                        <h3 class="fact__title">Полный доступ и 100% прозрачность</h3>
+                        <p class="fact__text">Вы получите полный доступ и возможность самостоятельно следить за работой рекламной кампании. </p>
+                    </div>
+
+                    <div class="settings__card fact">
+                        <img src="./components/about-us/img/News.svg" alt="news" class="fact__img">
+                        <h3 class="fact__title">Отчетность</h3>
+                        <p class="fact__text">Клиент не обязан знать как работают инструменты, но понимать, что у него творится, обязан. Поэтому делаем ежемесячные отчёты с цифрами, выводами и т. д., чтобы всё было наглядно и понятно.</p>
+                    </div>
+
+                    <div class="settings__card fact">
+                        <img src="./components/about-us/img/Search.svg" alt="search" class="fact__img">
+                        <h3 class="fact__title">Аналитика - наше все!</h3>
+                        <p class="fact__text">Оцифровываем и отслеживаем всё, что только возможно отследить. Аналитика, метрика, пиксели. Всё собираем, всё анализируем. Трафик без аналитики - деньги на ветер!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="settings__ticker ticker">
+                <div class="ticker-wrapper__first-half">
+                    <p>Рекламируйся правильно, зарабатывай много</p>
+                    <p>Рекламируйся правильно, зарабатывай много</p>
+                </div>
+                  <div class="ticker-wrapper__second-half">
+                    <p>Рекламируйся правильно, зарабатывай много</p> 
+                    <p>Рекламируйся правильно, зарабатывай много</p>
+                  </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="swiper-slider swiper_anchor">
+        <div class="swiper-slider__container _container">
+            <div class="swiper-slider__visable">
+                <p class="swiper-slider__slogan">Для наших клиентов мы добились таких показателей</p>
+
+                <div class="image-slider swiper-container">
+                    <div class="swiper-slider__points-box swiper-paginations">
+                    </div>
+                    <div class="swiper-slider__indicators">
+                        <div class="swiper-slider__arrows">
+                            <img src="./components/swiper-slider/img/arrow_left.svg" alt="" class="swiper-slider__arrows-left swiper-button-prev-modern">
+                            <img src="./components/swiper-slider/img/arrow_right.svg" alt="" class="swiper-slider__arrows-right swiper-button-next-modern">
+                        </div>
+                    </div>
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="swiper-slider__move-part">
+                                <div class="swiper-slider__left-p">
+                                    <p class="swiper-slider__subslogan">4-х кратное увеличение количества заявок с Яндекс.Директ в экономический ВУЗ Москвы</p>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Клиент:</p>
+                                        <p class="swiper-slider__main-text">Педагогический ВУЗ в Москве</p>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Поставленная цель:</p>
+                                        <div class="swiper-slider__main-text">
+                                            <ul>
+                                                <li>Наладить поток обращений, снизить стоимость заявки</li>
+                                                <li>KPI : цена заявки не выше 2000 руб.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Средства:</p>
+                                        <p class="swiper-slider__main-text"> <span>600 000 ₽</span>
+                                            в месяц с НДС</p>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Результат:</p>
+                                        <div class="swiper-slider__checkbox">
+                                            <div class="swiper-slider__chekbox-item">
+                                                <img src="./components/swiper-slider/img/check.svg" alt="" class="">
+                                                <p class="swiper-slider__main-text">Заработали 
+                                                    <span>3 500 000 ₽</span></p>
+                                            </div>
+                                            <div class="swiper-slider__chekbox-item">
+                                                <img src="./components/swiper-slider/img/check.svg" alt="" class="">
+                                                <p class="swiper-slider__main-text">Количество заявок: 
+                                                    <span>16</span> в день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-slider__right-p">    
+                                    <img src="./components/swiper-slider/img/macbook.png" alt="" class="swiper-slider__right-img">
+                                </div>
+            
+                            </div> 
+                            
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="swiper-slider__move-part">
+                                <div class="swiper-slider__left-p">
+                                    <p class="swiper-slider__subslogan">Вышли на первые позиции в поисковой выдаче Яндекса</p>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Клиент:</p>
+                                        <p class="swiper-slider__main-text">Производитель окрасочных камери расходных материалов к ним</p>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Поставленная цель:</p>
+                                        <div class="swiper-slider__main-text">
+                                            <ul>
+                                                <li>Занять первые места в поисковой выдаче Яндекса</li>
+                                                <li>Раз в 3 месяца получать заказ на камеру</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Средства:</p>
+                                        <p class="swiper-slider__main-text"> <span>60 000 ₽</span>
+                                            в месяц с НДС</p>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Результат:</p>
+                                        <div class="swiper-slider__checkbox">
+                                            <div class="swiper-slider__chekbox-item">
+                                                <img src="./components/swiper-slider/img/check.svg" alt="" class="">
+                                                <p class="swiper-slider__main-text">Уже на 
+                                                    <span>5-й</span>месяц показы на первых местах</p>
+                                            </div>
+                                            <div class="swiper-slider__chekbox-item">
+                                                <img src="./components/swiper-slider/img/check.svg" alt="" class="">
+                                                <p class="swiper-slider__main-text">Сотрудничество более 
+                                                    <span>2-х </span> лет</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-slider__right-p">    
+                                    <img src="./components/swiper-slider/img/blue_thing.png" alt="" class="swiper-slider__right-img">
+                                </div>
+            
+                            </div> 
+                            
+                        </div>
+                        
+                        <div class="swiper-slide">
+
+                            <div class="swiper-slider__move-part">
+                                <div class="swiper-slider__left-p">
+                                    <p class="swiper-slider__subslogan">Набор абитуриентов - выпускников школ для поступления в колледж</p>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Клиент:</p>
+                                        <p class="swiper-slider__main-text">Колледж от университета в Москве</p>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Поставленная цель:</p>
+                                        <div class="swiper-slider__main-text">
+                                            <ul>
+                                                <li>Заполнить заочную и очную форму обучения абитуриентами</li>
+                                                <li>Цена заявки не выше 5000 руб.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Средства:</p>
+                                        <p class="swiper-slider__main-text"> <span>3 500 000 ₽</span>
+                                            в месяц с НДС</p>
+                                    </div>
+                                    <div class="swiper-slider__box-text">
+                                        <p class="swiper-slider__bold">Результат:</p>
+                                        <div class="swiper-slider__checkbox">
+                                            <div class="swiper-slider__chekbox-item">
+                                                <img src="./components/swiper-slider/img/check.svg" alt="" class="">
+                                                <p class="swiper-slider__main-text">Набрано абитуриентов: 
+                                                    <span>1 300</span></p>
+                                            </div>
+                                            <div class="swiper-slider__chekbox-item">
+                                                <img src="./components/swiper-slider/img/check.svg" alt="" class="">
+                                                <p class="swiper-slider__main-text">Стоимость лида не выше 
+                                                    <span>5 000 ₽</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-slider__right-p">    
+                                    <img src="./components/swiper-slider/img/people.png" alt="" class="swiper-slider__right-img">
+                                </div>
+            
+                            </div> 
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slider__btn-p">
+                        <button class="swiper-slider__btn-dark _order-button _order-form">Хочу также</button>
+                        <button class="swiper-slider__light-dark _transparent-btn _watch-case">Смотреть кейс</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="form__container _container" id="formContainer">
+            <div class="form__text-part">
+                <h3 class="form__title">Созрел вопрос?</h3>
+                <p class="form__subtitle">На бесплатной консультации дадим рекомендации по росту конверсии</p>
+                <p class="form__text">Проведем бесплатный аудит контекстной рекламы и вашего сайта</p>
+            </div>
+            <form action="#" class="form__form" id="questionForm">
+                <input class="form__input form__input_name _secondForm__req" placeholder="Имя" data-input="true">
+                <input class="form__input form__input_phone _secondForm__req" placeholder="+7 (978) 796-34-92" type="tel" data-input="true">
+                <button class="form__button _order-button" id="form-record">Заказать консультацию</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contract ">
+        <div class="contract__container _container">
+            <div class="contract__wrapper">
+                <div class="contract__left-p">
+                    <img src="./components/contract/img/hands.png" alt="" class="contract_img">
+                </div>
+
+                <div class="contract__right-p">
+                    <p class="contract__slogan">Работа всегда по договору</p>
+                    <p class="contract__text">К сожалению, не все привыкли работать честно. Все чаще к нам приходят клиенты, у которых уже имеется опыт в сфере рекламы. И этот опыт не всегда удачен.</p>
+                    <p class="contract__text">Что бы Вы были уверенны в надежности партнера, в том, что Вас не собираются обманывать или пользоваться Вашими деньгами, мы заключаем с Вами договор.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cost-our-service cost-our-service_anchor">
+        <div class="cost-our-service__container _container">
+            <h3 class="cost-our-service__title">Стоимость наших услуг</h3>
+            <p class="cost-our-service__subtitle">Выберите тариф под свои потребности</p>
+            <div class="cost-our-service__cost-rate-container">
+                <div class="cost-our-service__cost-rate cost-rate cost-rate_base">
+                    <div class="cost-rate__top-container">
+                        <img src="./components/costOurService/img/Box.png" alt="box">
+                        <h4 class="cost-rate__title">Базовый</h4>
+                        <div class="cost-rate__p-container">
+                            <p class="cost-rate__p">Выбор одной-двух самых маржинальных услуг</p>
+                            <p class="cost-rate__p">Проработка и подготовка семантики</p>
+                            <p class="cost-rate__p">Рекламные кампании: на поиске Яндекса на сайтах партнеров Яндекса (РСЯ)</p>
+                            <p class="cost-rate__p">A/B тестирование</p>
+                            <p class="cost-rate__p">Введение и оптимизация рекламного проекта от 3-х месяцев</p>
+                            <p class="cost-rate__p">Введение и оптимизация рекламной кампании в течении 1-го месяца Бесплатно</p>
+                        </div>
+                    </div>
+                    <div class="cost-rate__bottom-container">
+                        <p class="cost-rate__another-p">Подходит для теста ниши бизнеса в интернете и для тех, кто только начинает зарабатывать с Яндекс Директ</p>
+                        <p class="cost-rate__cost">от 25 000 ₽</p>
+                        <button class="cost-rate__button _discassion-button _order-form">Обсудить</button>
+                    </div>
+                </div>
+
+                <div class="cost-our-service__cost-rate cost-rate cost-rate_optimum">
+                    <div class="cost-rate__top-container">
+                        <img src="./components/costOurService/img/Briefcase.png" alt="briefcase">
+                        <h4 class="cost-rate__title">Оптимальный</h4>
+                        <div class="cost-rate__p-container">
+                            <p class="cost-rate__p">Все, что входит в пакет “Базовый” и кроме этого:</p>
+                            <p class="cost-rate__p">Поэтапный запуск остальных желаемых направлений, начиная с более маржинальных, для снижения резкой нагрузки на рекламный бюджет</p>
+                            <p class="cost-rate__p">Использование сервисов коллтрекинга и сквозной аналитики</p>
+                            <p class="cost-rate__p">Постепенное выведение на стабильный результат отдачи от рекламы в рублях</p>
+                            <p class="cost-rate__p">Введение и оптимизация рекламного проекта от 3-х месяцев</p>
+                        </div>
+                        
+                    </div>
+                    <div class="cost-rate__bottom-container">
+                        <p class="cost-rate__another-p">Подходит для долговременных проектов с длинным плечом принятия решения о покупке, для B2B бизнесов</p>
+                        <p class="cost-rate__cost">от 75 000 ₽</p>
+                        <button class="cost-rate__button _discassion-button _order-form">Обсудить</button>  
+                    </div>
+                    
+                </div>
+
+                <div class="cost-our-service__cost-rate cost-rate cost-rate_max">
+                    <div class="cost-rate__top-container">
+                        <img src="./components/costOurService/img/Toolbox.png" alt="toolbox">
+                        <h4 class="cost-rate__title">Максимальный</h4>
+                        <div class="cost-rate__p-container">
+                            <p class="cost-rate__p">Все, что входит в пакет “Оптимальный” и кроме этого:</p>
+                            <p class="cost-rate__p">Проработка дополнительной семантики для расширения охвата и увеличения количества трафика (Конкуренты + Wordstat + Поисковые подсказки)</p>
+                            <p class="cost-rate__p">Максимальное количество объявлений под максимальное число запросов Вашей потенциальной аудитории</p>
+                            <p class="cost-rate__p">Введение и оптимизация рекламного проекта от 6 месяцев</p>
+                        </div>
+                        </div>
+                    <div class="cost-rate__bottom-container">
+                        <p class="cost-rate__another-p">Подходит для масштабной рекламной кампании с большим количеством направлений</p>
+                        <p class="cost-rate__cost">от 180 000 ₽</p>
+                        <button class="cost-rate__button _discassion-button _order-form">Обсудить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advertising-company ">
+        <div class="advertising-company__container _container">
+            <div class="advertising-company__wrapper">
+                <div class="advertising-company__left-p">
+                    <p class="advertising-company__sloagn">Уже есть <br> рекламная<br> кампания?</p>
+                    <div class="advertising-company__box-text">
+                        <p class="advertising-company__item-text">Но вы хотите, чтобы она работала эффективнее?  Хотите снизить стоимость заявки или увеличить их количество?</p>
+                        <p class="advertising-company__item-text">Мы можем помочь! Оставьте заявку и мы проведем аудит вашей рекламы и сайта.</p>
+                    </div>
+                    <button class="advertising-company__btn _order-button _order-form">Заказать консультацию</button>
+                </div>
+                <div class="advertising-company__right-p">
+                    <img src="./components/advertising-company/img/notebook.png" alt="" class="advertising-company__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="form__container _container" id="secondFormContainer">
+            <div class="form__text-part form__text-part_second-form">
+                <h3 class="form__title">Мы гарантированно снизим стоимость клиента</h3>
+                <p class="form__text">Заполните форму и получите бесплатную консультацию</p>
+            </div>
+            <form action="#" class="form__form" id="secondForm">
+                <input class="form__input form__input_name _form__req" placeholder="Имя" data-input="true">
+                <input class="form__input form__input_phone _form__req" placeholder="+7 (978) 796-34-92" type="tel" data-input="true">
+                <button class="form__button _order-button" id="secondForm-record">Заказать консультацию</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="questions">
+        <div class="questions__body _container" >
+            <h3 class="questions__title">Часто задаваемые вопросы</h3>
+            <div class="questions__container">
+                <ul class="questions__list">
+
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 1</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden__question">Вы получите поисковые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения</div>
+                    </div>          
+
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 2</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden__question">Вы получите поисковые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения
+                             Вы получите поисковые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения 
+                             Вы получите поисковые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения</div>
+                    </div>
+                    
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 3</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden__question">Вы получите поисковые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения</div>
+                    </div>
+                
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 4</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden__question">Вы получите поисковые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения</div>
+                    </div>         
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer ">
+        <div class="footer__container _container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="header__logo">
+                        <a href="#"><img src="./components/header/img/logo.svg" alt="logo" class="header__label _smooth-link" data-goto=".main-page_anchor"></a>
+                        <div class="header__logo-text">
+                            <p class="header_logo-up-text">Козак Контекст</p>
+                        </div>
+                    </div>
+
+                    <div class="footer__mid-box-text">
+                        <p class="footer__mid-text">
+                            <p>ИП Козак Сергей Иванович</p>
+                            <p>ИНН 920353177867</p>
+                        </p>
+                    </div>
+
+                    <p class="footer__policy">Политика конфиденциальности</p>
+                    <p class="footer__years">© 2016 - 2023</p>
+                </div>
+
+                <div class="footer__anchors">
+
+                    <div class="footer__anchors-box">
+                        <a href="#" class="footer_link _navigation _smooth-link" data-goto=".stage_anchor">Этапы</a>
+                        <a href="#" class="footer_link _navigation _smooth-link" data-goto=".stage__greeting_anchor">Наша студия</a>
+                        <a href="#" class="footer_link _navigation _smooth-link" data-goto=".swiper_anchor">Кейсы</a>
+                        <a href="#" class="footer_link _navigation _smooth-link" data-goto=".cost-our-service_anchor">Цены</a>
+                        <a href="#" class="footer_link _navigation">Контакты</a>
+                    </div>
+                </div>
+
+                <div class="footer__contacts">
+
+                    <div class="footer__contacts-box">
+
+                        <a href="tel:+7 (978) 796-34-92" class="header__phone-number">+7 (978) 796-34-92</a>
+                        <div class="footer__schedule">Пн-Пт с 10:00 до 19:00</div>
+    
+                        <button class="footer__btn">Заказать звонок</button>
+    
+                        <div class="header__social footer__social">
+                            <a href="#" class="header__social-item footer__social-item">
+                                <svg class="fl" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7564 11.8275L12.6189 10.2587C12.5262 10.2127 12.423 10.1918 12.3198 10.1984C12.2165 10.2049 12.1167 10.2386 12.0306 10.296L10.4932 11.3206C9.71491 10.9222 9.0817 10.289 8.68326 9.51064L9.70884 7.97423C9.76625 7.88812 9.79993 7.78838 9.80647 7.68509C9.81301 7.5818 9.79218 7.47862 9.7461 7.38595L8.17733 4.24841C8.12855 4.15025 8.05332 4.06767 7.96012 4.00998C7.86692 3.95229 7.75945 3.92179 7.64983 3.92192C6.66169 3.92192 5.71401 4.31446 5.01528 5.01318C4.31656 5.71191 3.92402 6.65959 3.92402 7.64773C3.92661 9.88327 4.81582 12.0265 6.39659 13.6073C7.97736 15.188 10.1206 16.0773 12.3561 16.0799C13.3443 16.0799 14.292 15.6873 14.9907 14.9886C15.6894 14.2899 16.082 13.3422 16.082 12.354C16.082 12.2447 16.0515 12.1375 15.994 12.0445C15.9365 11.9515 15.8543 11.8764 15.7564 11.8275ZM12.3561 14.9033C10.4326 14.9009 8.58844 14.1358 7.22827 12.7756C5.8681 11.4154 5.10292 9.57131 5.10059 7.64773C5.10065 7.03248 5.32321 6.438 5.72722 5.97399C6.13123 5.50997 6.68943 5.20772 7.29882 5.123L8.54011 7.60557L7.52139 9.13316C7.46787 9.21373 7.43503 9.30625 7.4258 9.40253C7.41656 9.49882 7.43121 9.5959 7.46845 9.68517C8.0094 10.9713 9.03255 11.9945 10.3187 12.5354C10.408 12.5727 10.505 12.5873 10.6013 12.5781C10.6976 12.5688 10.7901 12.536 10.8707 12.4825L12.3983 11.4638L14.8809 12.705C14.7962 13.3144 14.4939 13.8726 14.0299 14.2766C13.5659 14.6807 12.9714 14.9032 12.3561 14.9033ZM10.003 2.20428e-07C8.26929 -0.00036373 6.56528 0.449969 5.05812 1.30682C3.55097 2.16367 2.29245 3.39759 1.40603 4.88755C0.519614 6.3775 0.0357485 8.0723 0.00190601 9.80566C-0.0319365 11.539 0.385407 13.2514 1.21299 14.7748L0.0736748 18.1938C-0.00698272 18.4356 -0.018688 18.6952 0.039871 18.9433C0.09843 19.1914 0.224939 19.4184 0.405219 19.5986C0.585498 19.7789 0.812424 19.9054 1.06056 19.964C1.3087 20.0226 1.56824 20.0108 1.8101 19.9302L5.22903 18.7909C6.56737 19.5172 8.05388 19.9282 9.57522 19.9928C11.0966 20.0573 12.6125 19.7736 14.0076 19.1633C15.4026 18.553 16.6399 17.6322 17.625 16.4711C18.6101 15.31 19.3171 13.9393 19.6921 12.4634C20.067 10.9876 20.1 9.44567 19.7885 7.95517C19.4771 6.46466 18.8293 5.06496 17.8948 3.86279C16.9602 2.66062 15.7635 1.68773 14.3958 1.0183C13.0282 0.348876 11.5257 0.00058913 10.003 2.20428e-07ZM10.003 18.8252C8.4518 18.8256 6.92793 18.417 5.58495 17.6408C5.49542 17.5893 5.39407 17.5619 5.2908 17.5614C5.2275 17.5617 5.16465 17.572 5.10451 17.5917L1.4385 18.8134C1.40395 18.8249 1.36687 18.8266 1.33142 18.8183C1.29598 18.8099 1.26356 18.7918 1.2378 18.7661C1.21205 18.7403 1.19398 18.7079 1.18561 18.6724C1.17725 18.637 1.17892 18.5999 1.19044 18.5654L2.41212 14.9033C2.43855 14.8241 2.44785 14.7403 2.4394 14.6573C2.43094 14.5743 2.40493 14.494 2.36309 14.4219C1.38973 12.7404 0.998479 10.7848 1.25004 8.85828C1.50161 6.9318 2.38193 5.14218 3.75442 3.76708C5.12691 2.39198 6.91486 1.50827 8.84086 1.25305C10.7669 0.997824 12.7233 1.38536 14.4065 2.35553C16.0898 3.32571 17.4059 4.82428 18.1505 6.61875C18.8951 8.41323 19.0268 10.4033 18.5249 12.2802C18.0231 14.1571 16.9159 15.816 15.375 16.9993C13.8342 18.1827 11.9458 18.8245 10.003 18.8252Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="header__social-item footer__social-item">
+                                <svg class="str" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0991 1C20.7154 1 21.1804 1.54774 20.9317 2.56654L17.915 16.9721C17.7041 17.9964 17.0932 18.2429 16.2498 17.7664L9.05408 12.3821C9.02618 12.3618 9.00344 12.3351 8.98776 12.3041C8.97208 12.2731 8.9639 12.2388 8.9639 12.2041C8.9639 12.1693 8.97208 12.135 8.98776 12.104C9.00344 12.073 9.02618 12.0463 9.05408 12.026L17.3635 4.42338C17.742 4.08378 17.2824 3.91946 16.7851 4.2262L6.35635 10.8922C6.32472 10.9131 6.28881 10.9264 6.25134 10.9312C6.21387 10.9359 6.17583 10.932 6.1401 10.9196L1.71236 9.50095C0.728415 9.21064 0.728414 8.52597 1.93401 8.03848L19.6504 1.11503C19.7909 1.04673 19.9435 1.00762 20.0991 1V1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>   
+                            </a>
+                            <a href="#" class="header__social-item footer__social-item">
+                                <svg class="str" width="30" height="17" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5487 15.8977V11.5071C20.7508 11.9567 21.7631 14.2777 23.802 15.8977H29C27.7004 13.2256 25.7614 10.8588 23.3282 8.97456C25.1949 6.60732 27.1764 4.37894 28.1456 1H23.4215C21.5692 3.58545 20.5928 6.61393 17.5487 8.61087V1H10.6923L12.3292 2.8647V9.51016C9.67282 9.22583 7.87795 4.74923 5.93231 1H1C2.79487 6.0651 6.57128 17.1805 17.5487 15.8977Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>     
+                            </a>
+            
+                        </div>
+    
+                        <div class="footer__mail">
+                            <img src="./components/header/img/mail.svg" alt="">
+                            <a href="mailto:sergey-kozak@yandex.ru" class="footer__mailto">sergey-kozak@yandex.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
